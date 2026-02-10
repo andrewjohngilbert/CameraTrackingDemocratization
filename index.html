@@ -108,16 +108,16 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Irene Muñoz López<sup>[1]</sup>,
+              Irene Muñoz López,
             </span>
             <span class="author-block">
-              <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup>[1]</sup>
+              <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a>
             </span>
           </div>
 
           <div class="is-size-6 publication-authors">
             <span class="author-block">
-              <sup>[1]</sup>Centre for Creative Arts and Technologies (C-CATS), University of Surrey
+              Centre for Creative Arts and Technologies (C-CATS), University of Surrey
             </span>
             <br>
             <span class="author-block is-size-7 has-text-grey">
@@ -187,15 +187,19 @@
   </div>
 </section>
 
-<!-- TEASER / FIRST FIGURE -->
-<section class="hero teaser">
+<!-- Overview System -->
+<section class="hero teaser" id="workflow">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/camera-tracking-teaser.jpg" alt="First page teaser of camera tracking paper">
+      <h2 class="title is-3">Tracking Workflow Overview</h2>
       <h2 class="subtitle has-text-centered">
-        Overview of the camera tracking study. The paper compares an OpenCV-based tracker with Blender and After Effects under different
-        video noise levels and resolutions, integrating the resulting camera paths into Unreal Engine for qualitative assessment.
+        The camera tracking workflow begins with detection of salient features, followed by execution of the tracking algorithm, extraction of translation
+        and rotation vectors, and integration of motion over time to obtain camera coordinates and Euler angles.
       </h2>
+      <img src="assets/CameraTracking_Democratisation_Overview.jpg" alt="Overview of a tracking system">
+      <p class="has-text-centered is-size-7 has-text-grey">
+        <strong>Figure 1.</strong> Overview of the camera tracking study. The paper compares an OpenCV-based tracker with Blender and After Effects under different video noise levels and resolutions, integrating the resulting camera paths into Unreal Engine for qualitative assessment. 
+      </p>
     </div>
   </div>
 </section>
@@ -266,7 +270,7 @@
         The camera tracking workflow begins with detection of salient features, followed by execution of the tracking algorithm, extraction of translation
         and rotation vectors, and integration of motion over time to obtain camera coordinates and Euler angles.
       </h2>
-      <img src="assets/figure1_tracking_overview.jpg" alt="Overview of a tracking system">
+      <img src="assets/CameraTracking_Democratisation_System.jpg" alt="Overview of a tracking system">
       <p class="has-text-centered is-size-7 has-text-grey">
         <strong>Figure 1.</strong> Overview of a tracking system. Salient features are detected and tracked across frames, with extracted motion
         integrated over time to estimate camera movement.
