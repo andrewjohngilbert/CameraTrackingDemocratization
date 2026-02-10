@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81D6829LG0');
+  </script>
 
-  gtag('config', 'G-81D6829LG0');
-</script>
+  <!-- Canonical (update to your final URL) -->
+  <link rel="canonical" href="https://andrewjohngilbert.github.io/CameraTrackingDemocratization/" />
+
+  <!-- Structured data (JSON-LD) – adjust if needed -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Camera Tracking Systems and their Democratisation",
+    "author": [
+      { "@type": "Person", "name": "Irene Muñoz López" },
+      { "@type": "Person", "name": "Andrew Gilbert" }
+    ],
+    "datePublished": "2026-01-26",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SMPTE Motion Imaging Journal"
+    },
+    "url": "https://andrewjohngilbert.github.io/CameraTrackingDemocratization/",
+    "image": "assets/camera-tracking-teaser.jpg",
+    "description": "Web version of the SMPTE Motion Imaging Journal technical paper on camera tracking systems and their democratisation, comparing markerless tracking tools and an OpenCV-based tracker under varying noise and resolution.",
+    "keywords": [
+      "Camera Tracking",
+      "Open Source Tools",
+      "Unreal Engine",
+      "Optic Flow",
+      "OpenCV",
+      "Blender",
+      "After Effects",
+      "Virtual Production",
+      "Democratisation of Technology"
+    ]
+  }
+  </script>
 
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.">
-  <meta property="og:title" content="DEAR: Depth-Estimated Action Recognition"/>
-  <meta property="og:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset."/>
-  <meta property="og:url" content="https://andrewjohngilbert.github.io/dear/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="assets/dear_Teaser.png" />
+  <meta name="description" content="Camera Tracking Systems and their Democratisation – a web version of the SMPTE Motion Imaging Journal technical paper.">
+  <meta property="og:title" content="Camera Tracking Systems and their Democratisation"/>
+  <meta property="og:description" content="Comparison of camera tracking systems (OpenCV, Blender, After Effects) and their accessibility to the general public under varying noise and resolution."/>
+  <meta property="og:url" content="https://andrewjohngilbert.github.io/CameraTrackingDemocratization/"/>
+  <meta property="og:image" content="assets/camera-tracking-teaser.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="DEAR: Depth-Estimated Action Recognition">
-  <meta name="twitter:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="asserts/dear_Teaser.png">
+  <meta name="twitter:title" content="Camera Tracking Systems and their Democratisation">
+  <meta name="twitter:description" content="SMPTE technical paper on camera tracking systems, noise and resolution effects, and the democratisation of tracking technology.">
+  <meta name="twitter:image" content="assets/camera-tracking-teaser.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Machine Learning, Depth, Video Understanding,andrew Gilbert, Sadegh Rahmani,">
+
+  <meta name="keywords" content="Camera Tracking, OpenCV, Blender, After Effects, Unreal Engine, Optic Flow, Virtual Production, Noise, Resolution, SMPTE, Irene Muñoz López, Andrew Gilbert">
+  <meta name="author" content="Irene Muñoz López, Andrew Gilbert">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>DEAR: Depth-Estimated Action Recognition</title>
+  <title>Camera Tracking Systems and their Democratisation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
+  <!-- Bulma and template CSS (as in your original page) -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -54,165 +82,485 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
+<!-- HERO / TITLE BLOCK -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DEAR: Depth-Estimated Action Recognition</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/sadegh-rahmani" target="_blank">Sadegh Rahmani</a>[1]<sup></sup>,</span>
-                <span class="author-block">
-                  <a href="F" target="_blank">Filip Rybansky</a>[2]<sup></sup>,</span>
-                  <span class="author-block">
-                    <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/quocvuong.html" target="_blank">Quoc Vuong</a>[2]<sup></sup>,</span>
-                <span class="author-block">
-                  <a href="https://www.surrey.ac.uk/people/frank-guerin" target="_blank">Frank Guerin</a>[1]<sup></sup>,</span>
-                  <span class="author-block">
-                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a>[1]<sup></sup>,</span>
-                  </div>
+          <!-- Journal-style keywords line -->
+          <p class="is-size-7 has-text-weight-semibold" style="letter-spacing:.15em; text-transform: uppercase; color:#b64b45;">
+            Technical Paper
+          </p>
+          <p class="is-size-7" style="letter-spacing:.12em; text-transform: uppercase;">
+            <span class="has-text-grey">Keywords</span>
+              Camera Tracking // Open Source Tools // Unreal Engine // Optic Flow
+          </p>
+          <hr style="margin:0.75rem 0 1.5rem;">
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">[1] Unviersity of Surrey [2] Unviersityof Newcastle<br> <a href="https://eccv2024.ecva.net/" target="_blank">The European Conference of Computer Vision 2024</a> <a href="https://sites.google.com/view/hcvworkshop2024" target="_blank">Human-inspired Computer Vision Workshop</a>              
-                  </div>
+          <h1 class="title is-1 publication-title">
+            Camera Tracking Systems and their Democratisation
+          </h1>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://andrewjohngilbert.github.io/dear/assets/dear_paper.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                   <span class="link-block">
-                      <a href="assets/DEAR HCV Poster.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Poster</span>
-                    </a>
-                  </span>
- 
-                  <!-- Github link -->
-                <span class="link-block">
-                    <a href="https://github.com/SadeghRahmaniB/DEAR" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-              
-
-                
-            </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Irene Muñoz López<sup>[1]</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup>[1]</sup>
+            </span>
           </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">
+              <sup>[1]</sup>Centre for Creative Arts and Technologies (C-CATS), University of Surrey
+            </span>
+            <br>
+            <span class="author-block is-size-7 has-text-grey">
+              SMPTE Motion Imaging Journal, January/February 2026. DOI: 10.5594/JMI.2026/9GPF670
+            </span>
+          </div>
+
+          <!-- Paper links -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="assets/CameraTracking_Democratisation_Paper.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Journal PDF</span>
+                </a>
+              </span>
+
+              <!-- Add supplementary / code if applicable -->
+              <!--
+              <span class="link-block">
+                <a href="#" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Supplementary</span>
+                </a>
+              </span>
+              -->
+            </div>
+
+            <!-- Share buttons -->
+            <div class="columns is-centered" style="margin-top:0.75rem;">
+              <div class="column is-narrow">
+                <div class="buttons are-small is-centered">
+                  <a href="https://twitter.com/intent/tweet?url=https://andrewjohngilbert.github.io/CameraTrackingDemocratization/&text=Camera Tracking Systems and their Democratisation (SMPTE 2026)"
+                     target="_blank" class="button is-info is-light">
+                    <span class="icon"><i class="fab fa-twitter"></i></span><span>Tweet</span>
+                  </a>
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://andrewjohngilbert.github.io/CameraTrackingDemocratization/"
+                     target="_blank" class="button is-link is-light">
+                    <span class="icon"><i class="fab fa-linkedin"></i></span><span>Share</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Short highlight box -->
+            <div class="content" style="margin-top:1rem;">
+              <div class="box" style="text-align:left;">
+                <p style="margin-bottom:0.5rem;">
+                  <strong>Summary:</strong> This work analyses camera tracking systems used in virtual production, building an open-source OpenCV tracker
+                  and comparing it against industry-standard tools (Blender and After Effects). By varying video noise levels and resolutions,
+                  the paper evaluates performance, workflow, and the democratisation of tracking technology for the general public.
+                </p>
+                <ul style="margin-top:0;">
+                  <li>Builds a markerless OpenCV camera tracker to compete with commercial tools.</li>
+                  <li>Studies the impact of Gaussian noise and resolution on tracking performance.</li>
+                  <li>Assesses accessibility and workflow in Unreal Engine for qualitative evaluation.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- column -->
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- Teaser video-->
+<!-- TEASER / FIRST FIGURE -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/dear_teaser.jpg">
+      <img src="assets/camera-tracking-teaser.jpg" alt="First page teaser of camera tracking paper">
       <h2 class="subtitle has-text-centered">
-        We perform supervised action recognition using a fusion of RGB and depth map frames. We used S4V network for processing RGB and the same network plus VideoMamba to extract depth features. Gated cross-attention (GCA) has been used for fusing modalities, while mean operation has been selected for fusing models' scores.
+        Overview of the camera tracking study. The paper compares an OpenCV-based tracker with Blender and After Effects under different
+        video noise levels and resolutions, integrating the resulting camera paths into Unreal Engine for qualitative assessment.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- ABSTRACT -->
+<section class="section hero is-light" id="abstract">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Detecting actions in videos, particularly within cluttered scenes, poses significant challenges due to the limitations of 2D frame analysis from a camera perspective. Unlike human vision, which benefits from 3D understanding, recognizing actions in such environments can be difficult. This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.
+            Computer vision encompasses the analysis, processing, and interpretation of visual data. Tracking is a subset of this field, where systems
+            recognise salient features in a scene to determine their displacement across frames in a video stream. This facilitates automation, increases
+            efficiency, and broadens the functionality of these systems in applications such as surveillance, medicine, and entertainment.
+          </p>
+          <p>
+            Recent interest in Virtual Reality (VR) and Augmented Reality (AR) has prompted the development of new camera tracking techniques. Many tools are
+            available to analyse and process tracking information, but most are proprietary and not accessible to the general public, limiting
+            democratisation. This paper compares three camera tracking systems: two industry-standard tools (Blender and After Effects) and a tracker built
+            using OpenCV’s open-source tools. By examining tracking accuracy under different video resolutions and Gaussian noise levels, and by importing
+            tracks into Unreal Engine for qualitative assessment, the study evaluates workflow, optimisation, and democratisation of camera tracking technology.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-
-<!-- Paper poster -->
-
-  <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="assets/DEAR HCV Poster.pdf" width="100%" height="1000">
-          </iframe>
-        
+<!-- INTRODUCTION / BACKGROUND -->
+<section class="section" id="introduction">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Computer vision systems trained to analyse digital images and video enhance workflow automation and efficiency. Reliable tracking of objects or
+            salient features across frames is fundamental to surveillance, security, medicine, and human–computer interaction. Tracking techniques estimate
+            the camera’s geometry and pose in a scene and are central to VR and AR applications, as well as virtual production.
+          </p>
+          <p>
+            Commercial camera tracking tools increasingly support markerless workflows, yet the cost and proprietary nature of these tools limit their
+            accessibility. Open-source libraries, such as OpenCV, provide building blocks for bespoke tracking systems but require technical expertise.
+            In this context, it is important to understand how far low-cost or free systems can compete with professional solutions and what constraints
+            noise, resolution, and workflow impose on real-world usage.
+          </p>
+          <p>
+            The aim of this research is to understand the workflow, optimisation, and democratisation of common camera tracking systems by:
+          </p>
+          <ul>
+            <li>Creating an OpenCV-based camera tracker that can compete with industry-standard tools.</li>
+            <li>Investigating how different video resolutions and Gaussian noise levels affect tracking accuracy.</li>
+            <li>Evaluating qualitative performance in a virtual environment built in Unreal Engine.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{Rahmani:Dear:ECCVWS:2024,
-        AUTHOR = Rahmani, Sadegh and Rybansky, Filip and Vuong, Quoc and Guerin, Frank and Gilbert, Andrew ",
-        TITLE = "DEAR: Depth-Estimated Action Recognition",
-        BOOKTITLE = " The European Conference of Computer Vision 2024, Human-inspired Computer Vision Workshop",
-        YEAR = "2024",
-        }</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
 
+<!-- WORKFLOW FIGURE (FIGURE 1) -->
+<section class="hero teaser" id="workflow">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Tracking Workflow Overview</h2>
+      <h2 class="subtitle has-text-centered">
+        The camera tracking workflow begins with detection of salient features, followed by execution of the tracking algorithm, extraction of translation
+        and rotation vectors, and integration of motion over time to obtain camera coordinates and Euler angles.
+      </h2>
+      <img src="assets/figure1_tracking_overview.jpg" alt="Overview of a tracking system">
+      <p class="has-text-centered is-size-7 has-text-grey">
+        <strong>Figure 1.</strong> Overview of a tracking system. Salient features are detected and tracked across frames, with extracted motion
+        integrated over time to estimate camera movement.
+      </p>
+    </div>
+  </div>
+</section>
 
-  <footer class="footer">
+<!-- METHODOLOGY -->
+<section class="section" id="methodology">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Methodology</h2>
+        <div class="content has-text-justified">
+          <h3 class="title is-5">1. Building an OpenCV Camera Tracker</h3>
+          <p>
+            The OpenCV-based tracker detects salient features using SIFT and tracks their motion via Lucas–Kanade optic flow across the video.
+            From the resulting motion vectors, the Essential matrix and camera matrix are used to estimate camera pose, with translation and rotation
+            vectors integrated over time to obtain trajectories in $$x$$, $$y$$, and $$z$$. Euler angles describing roll, pitch, and yaw are extracted for
+            each frame, forming a camera path that can be imported into Unreal Engine.
+          </p>
+
+          <h3 class="title is-5">2. Experimental Video Dataset</h3>
+          <p>
+            Five 10‑second videos of a hand‑held walk along a path were recorded at $$4K$$ resolution (3840 × 2160). Each video was versioned by
+            adding Gaussian noise at 25 %, 50 %, and 75 % of pixels and by encoding at multiple resolutions (1080p, 720p, 480p). These versions
+            allowed a systematic study of how noise and resolution influence tracking performance for each system.
+          </p>
+
+          <h3 class="title is-5">3. Comparative Tracking Systems</h3>
+          <p>
+            In addition to the OpenCV tracker, the study uses:
+          </p>
+          <ul>
+            <li><strong>Blender</strong> – open-source 3D software with camera tracking tools based on feature detection and optic flow.</li>
+            <li><strong>Adobe After Effects</strong> – proprietary compositing and tracking tool widely used in industry.</li>
+          </ul>
+          <p>
+            All systems estimate camera motion, and the resulting tracks are evaluated using quantitative metrics (mean error per frame and standard deviation)
+            and qualitative inspection in Unreal Engine.
+          </p>
+
+          <h3 class="title is-5">4. Integration into Unreal Engine</h3>
+          <p>
+            Camera paths extracted from each tracking system are transformed to Unreal Engine’s left‑handed coordinate system. A Python API is used to create
+            camera actors and import coordinates as keyframes. Virtual scenes are constructed to match the physical environment, enabling side‑by‑side
+            comparison between video footage and virtual renders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY FIGURES (you can add more as separate sections, matching your exports) -->
+<section class="hero teaser" id="dataset-figures">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Dataset and Experimental Setup</h2>
+      <div class="content has-text-justified">
+        <p>
+          The paper illustrates salient feature detection in outdoor scenes, versions of the dataset with varying Gaussian noise and resolution,
+          and examples of frames used for qualitative comparison.
+        </p>
+      </div>
+
+      <!-- Example: Figure 2 -->
+      <img src="assets/figure2_salient_features.jpg" alt="Salient features detected using OpenCV">
+      <p class="has-text-centered is-size-7 has-text-grey">
+        <strong>Figure 2.</strong> Salient features detected using OpenCV’s SIFT feature detector, marked with red crosses.
+      </p>
+
+      <!-- Example: Figure 3 -->
+      <img src="assets/figure3_workflow.jpg" alt="Overview of the experimental workflow">
+      <p class="has-text-centered is-size-7 has-text-grey">
+        <strong>Figure 3.</strong> Overview of the experimental workflow. Original videos are versioned with added Gaussian noise and different
+        resolutions, tracked using Blender, After Effects, and the OpenCV tracker, and then imported into Unreal Engine for qualitative analyses.
+      </p>
+
+      <!-- Example: Figure 4 -->
+      <img src="assets/figure4_frames_walk.jpg" alt="Frames from one of the videos in the dataset">
+      <p class="has-text-centered is-size-7 has-text-grey">
+        <strong>Figure 4.</strong> Frames from one of the dataset videos showing the hand‑held walk along a path used in the experiments.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS TABLES -->
+<section class="section" id="results">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Quantitative Results</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        Tracking performance is quantified using the mean error per frame and standard deviation of the tracked camera position relative to a reference track.
+        Two main factors are investigated: Gaussian noise percentage and video resolution.
+      </p>
+    </div>
+
+    <!-- TABLE 1: Impact of Noise (simplified structure; fill in with exact values from the paper) -->
+    <h3 class="title is-4">Impact of Noise on Tracking Performance</h3>
+    <div class="table-container">
+      <table class="table is-striped is-hoverable is-fullwidth is-size-7">
+        <thead>
+          <tr>
+            <th>Tracker</th>
+            <th>% Gaussian Noise<br>Added to Video</th>
+            <th>Average Mean Error (pixels)<br>Across Dataset</th>
+            <th>Average Standard Deviation (pixels)<br>Across Dataset</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OpenCV</td>
+            <td>25 / 50 / 75</td>
+            <td>Populate from Table 1</td>
+            <td>Populate from Table 1</td>
+          </tr>
+          <tr>
+            <td>Blender</td>
+            <td>25 / 50 / 75</td>
+            <td>Populate from Table 1</td>
+            <td>Populate from Table 1</td>
+          </tr>
+          <tr>
+            <td>After Effects</td>
+            <td>25 / 50 / 75</td>
+            <td>Populate from Table 1</td>
+            <td>Populate from Table 1</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="is-size-7 has-text-grey">
+        <strong>Table 1.</strong> Average impact of noise on tracking performance for OpenCV, Blender, and After Effects.
+      </p>
+    </div>
+
+    <!-- TABLE 2: Impact of Resolution -->
+    <h3 class="title is-4">Impact of Resolution on Tracking Performance</h3>
+    <div class="table-container">
+      <table class="table is-striped is-hoverable is-fullwidth is-size-7">
+        <thead>
+          <tr>
+            <th>Tracker</th>
+            <th>Compared Video Resolution</th>
+            <th>Average Mean Error (pixels)<br>Across Dataset</th>
+            <th>Average Standard Deviation (pixels)<br>Across Dataset</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OpenCV</td>
+            <td>480p / 720p / 1080p</td>
+            <td>Populate from Table 2</td>
+            <td>Populate from Table 2</td>
+          </tr>
+          <tr>
+            <td>Blender</td>
+            <td>480p / 720p / 1080p</td>
+            <td>Populate from Table 2</td>
+            <td>Populate from Table 2</td>
+          </tr>
+          <tr>
+            <td>After Effects</td>
+            <td>480p / 720p / 1080p</td>
+            <td>Populate from Table 2</td>
+            <td>Populate from Table 2</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="is-size-7 has-text-grey">
+        <strong>Table 2.</strong> Average impact of resolution changes on tracking performance across the dataset.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- QUALITATIVE RESULTS IN UNREAL ENGINE (FIGURES 9–15 etc.) -->
+<section class="hero teaser" id="ue-results">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Qualitative Evaluation in Unreal Engine</h2>
+      <div class="content has-text-justified">
+        <p>
+          To assess the perceptual impact of noise and resolution, camera paths from each system are imported into Unreal Engine. Virtual scenes reproduce
+          key elements of the physical environment, enabling visual comparison between the original footage and rendered camera moves.
+        </p>
+      </div>
+
+      <img src="assets/figure9_ue_comparison.jpg" alt="Example comparison of source and virtual scene">
+      <p class="has-text-centered is-size-7 has-text-grey">
+        <strong>Figure 9.</strong> Example comparison between a source video (right) and a virtual scene (left) with matching elements in Unreal Engine,
+        used to assess tracking performance qualitatively.
+      </p>
+
+      <!-- Add more UE figures as needed (Figures 10–15) -->
+    </div>
+  </div>
+</section>
+
+<!-- DISCUSSION / CONCLUSION -->
+<section class="section" id="discussion">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Discussion and Conclusion</h2>
+        <div class="content has-text-justified">
+          <p>
+            The experiments show that all three tracking systems are sensitive to noise and resolution, but the degree and pattern of degradation differ.
+            The OpenCV tracker generally achieves the lowest mean error per frame across noise levels, suggesting robustness to Gaussian noise.
+            However, it is more affected by lower resolutions than Blender or After Effects, which maintain more consistent error trends as resolution decreases.
+          </p>
+          <p>
+            Qualitative inspection in Unreal Engine indicates that noise tends to produce jittery yet recognisable camera motion, while low resolution can
+            cause more severe drift away from the original trajectory. At extreme combinations of noise and low resolution, tracks become unsuitable
+            for precise virtual production work.
+          </p>
+          <p>
+            From a democratisation perspective, the open-source OpenCV tracker demonstrates that low-cost solutions can achieve performance comparable to,
+            and sometimes surpassing, commercial tools, particularly when videos are recorded at sufficiently high resolution. Nevertheless, the complexity
+            of configuration and the need to manage coordinate systems and data import pipelines in Unreal Engine remain barriers for non-expert users.
+          </p>
+          <p>
+            Future work could explore real-time tracking approaches, alternative open-source libraries, and improved tooling to simplify the integration of
+            low-cost trackers into virtual production workflows, further expanding access to camera tracking technology.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES (SHORT WEB VERSION – you can expand with the full numbered list from the paper) -->
+<section class="section" id="references">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">References</h2>
+    <p class="is-size-7 has-text-grey">
+      Below is a minimal placeholder. For a full web reproduction, copy the reference list from the journal and format as numbered entries.
+    </p>
+    <ol class="is-size-7">
+      <li>Include complete numbered references exactly as in the SMPTE article here.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- BibTeX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <button class="button is-small is-info" onclick="copyBibtex()">Copy BibTeX</button>
+    <pre id="bibtex-entry"><code>@article{MunozLopez2026CameraTracking,
+  author  = {Irene Mu{\~n}oz L{\'o}pez and Andrew Gilbert},
+  title   = {Camera Tracking Systems and their Democratisation},
+  journal = {SMPTE Motion Imaging Journal},
+  year    = {2026},
+  volume  = {26},
+  number  = {1},
+  month   = {January/February},
+  doi     = {10.5594/JMI.2026/9GPF670}
+}</code></pre>
+    <script>
+      function copyBibtex() {
+        var bib = document.getElementById('bibtex-entry').innerText;
+        navigator.clipboard.writeText(bib);
+      }
+    </script>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <strong>Camera Tracking Systems and their Democratisation</strong> by
+            Irene Muñoz López and
+            <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a>.<br>
+            <em>SMPTE Motion Imaging Journal, January/February 2026.</em><br><br>
+            This page was built using the
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+            adapted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br>
+            Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+              CC BY-SA 4.0</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
