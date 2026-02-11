@@ -230,37 +230,6 @@
   </div>
 </section>
 
-<!-- INTRODUCTION / BACKGROUND -->
-<section class="section" id="introduction">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified">
-          <p>
-            Computer vision systems trained to analyse digital images and video enhance workflow automation and efficiency. Reliable tracking of objects or
-            salient features across frames is fundamental to surveillance, security, medicine, and human–computer interaction. Tracking techniques estimate
-            the camera’s geometry and pose in a scene and are central to VR and AR applications, as well as virtual production.
-          </p>
-          <p>
-            Commercial camera tracking tools increasingly support markerless workflows, yet the cost and proprietary nature of these tools limit their
-            accessibility. Open-source libraries, such as OpenCV, provide building blocks for bespoke tracking systems but require technical expertise.
-            In this context, it is important to understand how far low-cost or free systems can compete with professional solutions and what constraints
-            noise, resolution, and workflow impose on real-world usage.
-          </p>
-          <p>
-            The aim of this research is to understand the workflow, optimisation, and democratisation of common camera tracking systems by:
-          </p>
-          <ul>
-            <li>Creating an OpenCV-based camera tracker that can compete with industry-standard tools.</li>
-            <li>Investigating how different video resolutions and Gaussian noise levels affect tracking accuracy.</li>
-            <li>Evaluating qualitative performance in a virtual environment built in Unreal Engine.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- WORKFLOW FIGURE (FIGURE 1) -->
 <section class="hero teaser" id="workflow">
@@ -339,185 +308,24 @@
         </p>
       </div>
 
-      <!-- Example: Figure 2 -->
-      <img src="assets/figure2_salient_features.jpg" alt="Salient features detected using OpenCV">
+      <!-- Noise2 -->
+      <img src="assets/CameraTracking_Democratisation_Noise.jpg" alt="Salient features detected using OpenCV">
       <p class="has-text-centered is-size-7 has-text-grey">
-        <strong>Figure 2.</strong> Salient features detected using OpenCV’s SIFT feature detector, marked with red crosses.
+         Graphical representation of the effect Noise % had on x,y, and z coordinates for Video 1. The original 4K video is drawn in blue. Noise levels cause deviations from the original values, thus degrading the track’s accuracy.
       </p>
 
-      <!-- Example: Figure 3 -->
-      <img src="assets/figure3_workflow.jpg" alt="Overview of the experimental workflow">
+      <!--  Resolution -->
+      <img src="assets/CameraTracking_Democratisation_Res.jpg" alt="Overview of the experimental workflow">
       <p class="has-text-centered is-size-7 has-text-grey">
-        <strong>Figure 3.</strong> Overview of the experimental workflow. Original videos are versioned with added Gaussian noise and different
-        resolutions, tracked using Blender, After Effects, and the OpenCV tracker, and then imported into Unreal Engine for qualitative analyses.
+        Graphical representation of the effect different Resolutions had on x,y, and z coordinates for video.
       </p>
 
-      <!-- Example: Figure 4 -->
-      <img src="assets/figure4_frames_walk.jpg" alt="Frames from one of the videos in the dataset">
-      <p class="has-text-centered is-size-7 has-text-grey">
-        <strong>Figure 4.</strong> Frames from one of the dataset videos showing the hand‑held walk along a path used in the experiments.
-      </p>
+      
     </div>
   </div>
 </section>
 
-<!-- RESULTS TABLES -->
-<section class="section" id="results">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Quantitative Results</h2>
 
-    <div class="content has-text-justified">
-      <p>
-        Tracking performance is quantified using the mean error per frame and standard deviation of the tracked camera position relative to a reference track.
-        Two main factors are investigated: Gaussian noise percentage and video resolution.
-      </p>
-    </div>
-
-    <!-- TABLE 1: Impact of Noise (simplified structure; fill in with exact values from the paper) -->
-    <h3 class="title is-4">Impact of Noise on Tracking Performance</h3>
-    <div class="table-container">
-      <table class="table is-striped is-hoverable is-fullwidth is-size-7">
-        <thead>
-          <tr>
-            <th>Tracker</th>
-            <th>% Gaussian Noise<br>Added to Video</th>
-            <th>Average Mean Error (pixels)<br>Across Dataset</th>
-            <th>Average Standard Deviation (pixels)<br>Across Dataset</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>OpenCV</td>
-            <td>25 / 50 / 75</td>
-            <td>Populate from Table 1</td>
-            <td>Populate from Table 1</td>
-          </tr>
-          <tr>
-            <td>Blender</td>
-            <td>25 / 50 / 75</td>
-            <td>Populate from Table 1</td>
-            <td>Populate from Table 1</td>
-          </tr>
-          <tr>
-            <td>After Effects</td>
-            <td>25 / 50 / 75</td>
-            <td>Populate from Table 1</td>
-            <td>Populate from Table 1</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="is-size-7 has-text-grey">
-        <strong>Table 1.</strong> Average impact of noise on tracking performance for OpenCV, Blender, and After Effects.
-      </p>
-    </div>
-
-    <!-- TABLE 2: Impact of Resolution -->
-    <h3 class="title is-4">Impact of Resolution on Tracking Performance</h3>
-    <div class="table-container">
-      <table class="table is-striped is-hoverable is-fullwidth is-size-7">
-        <thead>
-          <tr>
-            <th>Tracker</th>
-            <th>Compared Video Resolution</th>
-            <th>Average Mean Error (pixels)<br>Across Dataset</th>
-            <th>Average Standard Deviation (pixels)<br>Across Dataset</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>OpenCV</td>
-            <td>480p / 720p / 1080p</td>
-            <td>Populate from Table 2</td>
-            <td>Populate from Table 2</td>
-          </tr>
-          <tr>
-            <td>Blender</td>
-            <td>480p / 720p / 1080p</td>
-            <td>Populate from Table 2</td>
-            <td>Populate from Table 2</td>
-          </tr>
-          <tr>
-            <td>After Effects</td>
-            <td>480p / 720p / 1080p</td>
-            <td>Populate from Table 2</td>
-            <td>Populate from Table 2</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="is-size-7 has-text-grey">
-        <strong>Table 2.</strong> Average impact of resolution changes on tracking performance across the dataset.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- QUALITATIVE RESULTS IN UNREAL ENGINE (FIGURES 9–15 etc.) -->
-<section class="hero teaser" id="ue-results">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">Qualitative Evaluation in Unreal Engine</h2>
-      <div class="content has-text-justified">
-        <p>
-          To assess the perceptual impact of noise and resolution, camera paths from each system are imported into Unreal Engine. Virtual scenes reproduce
-          key elements of the physical environment, enabling visual comparison between the original footage and rendered camera moves.
-        </p>
-      </div>
-
-      <img src="assets/figure9_ue_comparison.jpg" alt="Example comparison of source and virtual scene">
-      <p class="has-text-centered is-size-7 has-text-grey">
-        <strong>Figure 9.</strong> Example comparison between a source video (right) and a virtual scene (left) with matching elements in Unreal Engine,
-        used to assess tracking performance qualitatively.
-      </p>
-
-      <!-- Add more UE figures as needed (Figures 10–15) -->
-    </div>
-  </div>
-</section>
-
-<!-- DISCUSSION / CONCLUSION -->
-<section class="section" id="discussion">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Discussion and Conclusion</h2>
-        <div class="content has-text-justified">
-          <p>
-            The experiments show that all three tracking systems are sensitive to noise and resolution, but the degree and pattern of degradation differ.
-            The OpenCV tracker generally achieves the lowest mean error per frame across noise levels, suggesting robustness to Gaussian noise.
-            However, it is more affected by lower resolutions than Blender or After Effects, which maintain more consistent error trends as resolution decreases.
-          </p>
-          <p>
-            Qualitative inspection in Unreal Engine indicates that noise tends to produce jittery yet recognisable camera motion, while low resolution can
-            cause more severe drift away from the original trajectory. At extreme combinations of noise and low resolution, tracks become unsuitable
-            for precise virtual production work.
-          </p>
-          <p>
-            From a democratisation perspective, the open-source OpenCV tracker demonstrates that low-cost solutions can achieve performance comparable to,
-            and sometimes surpassing, commercial tools, particularly when videos are recorded at sufficiently high resolution. Nevertheless, the complexity
-            of configuration and the need to manage coordinate systems and data import pipelines in Unreal Engine remain barriers for non-expert users.
-          </p>
-          <p>
-            Future work could explore real-time tracking approaches, alternative open-source libraries, and improved tooling to simplify the integration of
-            low-cost trackers into virtual production workflows, further expanding access to camera tracking technology.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- REFERENCES (SHORT WEB VERSION – you can expand with the full numbered list from the paper) -->
-<section class="section" id="references">
-  <div class="container is-max-desktop content">
-    <h2 class="title is-3">References</h2>
-    <p class="is-size-7 has-text-grey">
-      Below is a minimal placeholder. For a full web reproduction, copy the reference list from the journal and format as numbered entries.
-    </p>
-    <ol class="is-size-7">
-      <li>Include complete numbered references exactly as in the SMPTE article here.</li>
-    </ol>
-  </div>
-</section>
 
 <!-- BibTeX -->
 <section class="section" id="BibTeX">
